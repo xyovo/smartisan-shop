@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+.container>.title {
+    width: 100%;
+    height: 50px;
+    /* 毛玻璃背景 */
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    color: rgba(255, 255, 255, 0.898);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.title>p {
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 800;
+    color: #666;
+}
+
+/* 底部导航栏 */
+.nav-bottom {
+    width: 100%;
+    height: 50px;
+
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    /* 毛玻璃背景 */
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    color: rgba(255, 255, 255, 0.898);
+}
+
+.nav-bottom>.item {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-bottom>.item>span {
+    display: block;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+.nav-bottom>.item>p {
+    height: 10px;
+    width: 80px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-bottom>.item:first-child {
+    color: #b91720;
+}
+
+/* 搜索框 */
+.search {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    color: rgba(255, 255, 255, 0.898);
+}
+
+
+
+.search>.input {
+    width: 90%;
+    height: 30px;
+    position: relative;
+}
+
+.search>.input>input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    text-align: center;
+    border: none;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.search>.input>span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    color: #666;
+    cursor: pointer;
+}
+
+
+
+/* 轮播图 */
+.slideshow {
+    width: 95%;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.slideshow>.slideshowImg {
+    width: 100%;
+    height: 200px;
+}
+
+.slideshow>.slideshowImg {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.slideshow>.slideshowImg>img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s;
+}
+
+.slideshow>.slideshowImg>img:first-child {
+    z-index: 1;
+}
+
+.pointBox {
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 0 180px;
+}
+
+.pointBox>.item {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.pointBox>.item:first-child {
+    background-color: rgba(215, 0, 15, .8);
+
+}
+
+.slideshow>.btn>.item {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+    top: 245px;
+}
+
+.slideshow>.btn>.item {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 50%;
+    color: rgba(215, 0, 15, .2);
+    cursor: pointer;
+    font-size: 18px;
+    transition: 800ms;
+    user-select: none;
+}
+
+.slideshow>.btn>.item:hover {
+    color: rgba(215, 0, 15, .6);
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 50%;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.slideshow>.btn>.item:first-child {
+    left: 10px;
+}
+
+.slideshow>.btn>.item:last-child {
+    right: 10px;
+}

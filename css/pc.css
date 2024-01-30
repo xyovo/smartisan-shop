@@ -1,0 +1,47 @@
+/* 
+    此css为pc端布局
+    当设备宽度大于480时使用此css
+*/
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    width: 480px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.container>.content {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.category-box {
+    width: 480px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.category-box>.nav {
+    width: 105.6px;
+    height: auto;
+}
+.category-box>.nav-content {
+    width: 374.4px;
+}
+
+.nav-bottom {
+    width: 480px;
+    margin: 0 auto;
+}
+.search {
+    width: 480px;
+}
+
+.container>.title {
+    width: 480px;
+}
+
+

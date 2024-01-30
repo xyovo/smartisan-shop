@@ -1,0 +1,149 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pc {
+    display: none;
+}
+
+/* 父容器-container */
+.container {
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+
+/* 轮播图 */
+.swiper {
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.swiper img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 商品区 */
+.goods0 {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+
+.goods0-0 {
+    width: 100%;
+    height: auto;
+}
+
+.goods0-0>.banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -2px;
+}
+
+.goods0-0>.banner>img {
+    width: 100%;
+}
+
+.goods0-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.goods0-1>.goods {
+    width: 50%;
+    cursor: pointer;
+}
+
+.goods0-1>.goods>img {
+    width: 100%;
+}
+
+/* 商品推荐 */
+.goods1 {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.goods1>.title {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    font-weight: 600;
+}
+.goods1-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.goods1-1-item {
+    width: 50%;
+    height: auto;
+    margin: 5px;
+}
+.goods1-1-item1 {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.goods1-1-item1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.02);
+    border-radius: 5px;
+}
+.goods1-1-item1>.img-box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.goods1-1-item1>.img-box>img {
+    width: 100%;
+    height: auto;
+}
+.goods1-1-item1>.title {
+    box-sizing: border-box;
+    font-size: 12px;
+    padding:0 15px;
+    font-weight: 600;
+    color: #666;
+}
+.goods1-1-item1>.price {
+    box-sizing: border-box;
+    padding:0 15px;
+    color: #b91720;
+}
+
+

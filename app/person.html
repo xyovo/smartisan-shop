@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锤子商城</title>
+    <link rel="shortcut icon" href="//static.smartisanos.cn/common/img/favicon.ico">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/person.css">
+    <link rel="stylesheet" href="../css/pc.css" media="all and (min-width:480px)" >
+
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="title">
+            <p>个人中心</p>
+        </div>
+
+
+        <div class="content">
+
+            <div class="head">
+                <div class="top">
+                    <div class="head-info">
+                        <div class="head-img">
+                            <img src="../img/head-img.png" alt="">
+                        </div>
+                        <div class="head-name">登录/注册</div>
+                    </div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="item">
+                        <div class="icon">
+                            <span class="iconfont">&#xe600;</span>
+                        </div>
+                        <div class="title">全部订单</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="iconfont">&#xe601;</span>
+                        </div>
+                        <div class="title">待付款</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="iconfont">&#xe62f;</span>
+                        </div>
+                        <div class="title">待收货</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="iconfont">&#xe63d;</span>
+                        </div>
+                        <div class="title">待评价</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <span class="iconfont">&#xe603;</span>
+                        </div>
+                        <div class="title">售后</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="item">
+                    <div class="title">地址管理</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">我的优惠券</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">优先购买码</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="item">
+                    <div class="title">常见问题</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">服务支持</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="item">
+                    <div class="title">意外碎屏保修服务</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">延长保修服务</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">协议政策</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">资质证照</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">活动说明</div>
+                    <div class="icon">
+                        <span class="iconfont">&#xe775;</span>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+
+        <div class="nav-bottom">
+            <div class="item" style="color: #666;">
+                <span class="iconfont">&#xe61b;</span>
+                <p>首页</p>
+            </div>
+            <div class="item">
+                <span class="iconfont">&#xe618;</span>
+                <p>分类</p>
+            </div>
+            <div class="item">
+                <span class="iconfont">&#xe65a;</span>
+                <p>购物车</p>
+            </div>
+            <div class="item" style="color: #b91720;">
+                <span class="iconfont">&#xe61e;</span>
+                <p>个人中心</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        (function () {
+            let item = document.querySelectorAll('.nav-bottom>.item');
+            for (let i = 0; i < item.length; i++) {
+                item[i].onclick = function () {
+                    switch (i) {
+                        case 0:
+                            window.location.href = "../index.html";
+                            break
+                        case 1:
+                            window.location.href = "./category.html";
+                            break
+                        case 2:
+                            window.location.href = "./cart.html";
+                            break
+                        case 3:
+                            window.location.href = "";
+                    }
+                }
+            }
+        }());
+    </script>
+
+</body>
+
+</html>

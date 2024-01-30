@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="shortcut icon" href="//static.smartisanos.cn/common/img/favicon.ico">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/public.css" media="all and (max-width:1200px)">
+    <link rel="stylesheet" href="../css/mobile.css"  media="all and (max-width:1200px)">
+    <link rel="stylesheet" href="../css/cart.css" media="all and (max-width:1200px)">
+    <link rel="stylesheet" href="../css/pc.css" media="all and (min-width:480px) and (max-width:1200px)" )>
+    <link rel="stylesheet" href="../css/max-cart.css" media="all and (min-width:1200px)">
+    <link rel="stylesheet" href="../css/max.css" media="all and (min-width:1200px)">
+
+    <!-- <script src="../js/index.js"></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="title">
+            <p>购物车</p>
+        </div>
+
+
+        <div class="content">
+
+            <div class="none-box">
+                <div class="logo">
+                    <span class="iconfont">&#xe65a;</span>
+                </div>
+                <div class="p1">购物车暂无商品</div>
+                <div class="p2">添加到购物车的商品将会显示在这里</div>
+                <div class="btn">
+                    <div class="btn1">登录</div>
+                    <div class="btn1">现在选购</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="nav-bottom">
+            <div class="item" style="color: #666;">
+                <span class="iconfont">&#xe61b;</span>
+                <p>首页</p>
+            </div>
+            <div class="item">
+                <span class="iconfont">&#xe618;</span>
+                <p>分类</p>
+            </div>
+            <div class="item" style="color: #b91720;">
+                <span class="iconfont">&#xe65a;</span>
+                <p>购物车</p>
+            </div>
+            <div class="item">
+                <span class="iconfont">&#xe61e;</span>
+                <p>个人中心</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- pc -->
+    <div class="pc">
+
+        <div class="header">
+            <div class="nav1">
+                <div class="logo"><span class="iconfont">&#xe695;</span></div>
+                <div class="nav1-box">
+                    <div class="item" onclick="toIndex()">在线商城</div>
+                    <div class="item" onclick="toDetail()">坚果R2</div>
+                    <div class="item" onclick="toNone()">Smartisan TNT go</div>
+                    <div class="item" onclick="toNone()">坚果TNT工作站</div>
+                    <div class="item" onclick="toNone()">Smartisan</div>
+                    <div class="item" onclick="toNone()">欢喜云</div>
+                    <div class="item" onclick="toNone()">论坛</div>
+                    <div class="item" onclick="toNone()">开发者支持</div>
+                    <div class="item" onclick="toNone()">荣誉与奖项</div>
+                </div>
+                <div class="btn">
+                    <div class="item" onclick="toPerson()">
+                        <span class="iconfont">&#xe61e;</span>
+                        <div class="items">
+                            <div onclick="my()">我的</div>
+                            <div onclick="exitLogin()">退出登录</div>
+                        </div>
+                    </div>
+                    <div class="item" onclick="toCart()"><span class="iconfont">&#xe65a;</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            
+            <div class="cart">
+                <div class="title">购物清单</div>
+                <div class="null">
+                    <img src="../img/null-cart.png" alt="">
+                    <p>您的购物车还没有商品</p>
+                    <div class="btn">选在选购</div>
+                </div>
+                <div class="goods">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>编号</td>
+                                <td>名称</td>
+                                <td>图片</td>
+                                <td>型号</td>
+                                <td>颜色</td>
+                                <td>数量</td>
+                                <td>单价</td>
+                                <td>总价</td>
+                                <td>操作</td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="good">
+                                <td>290120</td>
+                                <td>坚果R2</td>
+                                <td><img src="../img/g1.webp" alt=""></td>
+                                <td>8GB + 256GB</td>
+                                <td>黑色</td>
+                                <td>
+                                    <div class="numBox">
+                                        <div class="subtract">-</div>
+                                        <input type="number" value="1">
+                                        <div class="plus">+</div>
+                                    </div>
+                                </td>
+                                <td>￥<span class="price">2999.00</span></td>
+                                <td>￥<span class="aTotal">2999.00</span></td>
+                                <td class="delete">删除</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pay">
+                        <div class="total">总价: ￥<span id="totalPrice">0.0</span> </div>
+                        <div class="nowPay">立即付款</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="top">
+                <div class="top-left">
+                    <div class="item">
+                        <div class="item-title">订单服务</div>
+                        <div class="item-child">
+                            <div class="item1">购买指南</div>
+                            <div class="item1">送货政策</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">服务支持</div>
+                        <div class="item-child">
+                            <div class="item1">自助服务</div>
+                            <div class="item1">维修门店</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">媒体中心</div>
+                        <div class="item-child">
+                            <div class="item1">新闻动态</div>
+                            <div class="item1">官方视频</div>
+                            <div class="item1">图片资源</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">关注我们</div>
+                        <div class="item-child">
+                            <div class="item1">新浪微博</div>
+                            <div class="item1">官方微信</div>
+                            <div class="item1">荣誉奖项</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <div class="btn">在线帮助</div>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>Copyright © 2020 smartisan.com 版权所有</li>
+                    <li>锤子商城隐私政策</li>
+                    <li>锤子商城用户协议</li>
+                    <li>资质证照</li>
+                </ul>
+                <ul>
+                    <li>京 ICP 备 19048576 号 - 1</li>
+                    <li>京公网安备 11010802033469号</li>
+                    <li>京食药网食备 202010031</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        (function () {
+            let item = document.querySelectorAll('.nav-bottom>.item');
+            for (let i = 0; i < item.length; i++) {
+                item[i].onclick = function () {
+                    switch (i) {
+                        case 0:
+                            window.location.href = "../index.html";
+                            break
+                        case 1:
+                            window.location.href = "./category.html";
+                            break
+                        case 2:
+                            window.location.href = "./category.html";
+                            break
+                        case 3:
+                            window.location.href = "./person.html";
+                    }
+                }
+            }
+        }());
+    </script>
+
+</body>
+<script src="../js/cart.js"></script>
+
+</html>

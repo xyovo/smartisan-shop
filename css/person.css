@@ -1,0 +1,121 @@
+
+
+.content {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 15px;
+    padding-bottom: 70px;
+}
+
+.head {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    background: #fff;
+    border-radius: 10px;
+}
+.head>.top {
+    width: 100%;
+    height: 110px;
+    display: flex;
+}
+.head>.top>.head-info {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.head>.top>.head-info>.head-img {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+.head>.top>.head-info>.head-img img{
+    width: 50px;
+}
+.head>.top>.head-info>.head-name {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #333;
+}
+
+.head>.top>.icon {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.head>.top>.icon>span, .back-icon {
+    font-size: 22px;
+    font-weight: 600;
+}
+.head>.bottom {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    border-top: 0.5px solid rgba(0,0,0,0.1);
+}
+.head>.bottom>.item {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-right: 0.5px solid rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+.head>.bottom>.item:last-child {
+    border: none;
+}
+.head>.bottom>.item>.icon {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.head>.bottom>.item>.icon>span {
+    font-size: 20px;
+}
+.head>.bottom>.item>.title {
+    font-size: 6px;
+    font-weight: 100;
+}
+
+/* 菜单 */
+.content>.menu {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.content>.menu>.item {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.content>.menu>.item>.icon {
+    cursor: pointer;
+    color: #666;
+}

@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: -webkit-image-set(url(../img/login-bg.png) 1x,url(../img/login-bg.png) 2x);
+    background-size: auto;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login {
+    width: 480px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
+    background: #fff;
+}
+.login>.logo {
+    width: 480px;
+    height: 209px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login>.logo>img {
+    width: 120px;
+}
+.login>p {
+    width: 480px;
+    text-align: center;
+    height: 29px;
+    line-height: 29px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(0,0,0,.8);
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.login>.input {
+    width: 480px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+.login>.input input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.login>.input ::-webkit-input-placeholder {
+    color: rgba(0,0,0,0.3);
+}
+.login>.input>.username {
+    position: relative;
+}
+.login>.input>.username>.msg {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: #e65c53;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    display: none;
+}
+.login>.other {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.login>.other p {
+    color: #7e95f2;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.login>.other div:last-child {
+    display: flex;
+}
+.login>.btn {
+    width: 440px;
+    height: 60px;
+    background-color: #5c89f2;
+    margin: 10px auto;
+    border-radius: 8px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.login>.other2 {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: #999;
+}
+.login>.other2> span {
+    color: #5c89f2;
+    cursor: pointer;
+    padding: 0 5px;
+}
